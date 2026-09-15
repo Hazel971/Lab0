@@ -7,8 +7,12 @@ Due: 30 Sep, 23:59:59
 1. 认真阅读[文档](https://ics-26fall-fdu.github.io/labs/lab0-git-lab/)，学习 Git 的基本用法，并在报告中回答文档中的问题。（15 分）
 
     - 你之前有过多人协同开发的经历吗？如果有，你们是使用什么方式分工协作的？
+    答：我之前没有过相关经历。
     - 思考一下，Git 为什么要设计“暂存-提交”两个步骤？
+    答：暂存区可以给作者提供更多的容错空间，方便作者在众多修改版本中挑选合适的版本作为最终版本上传，让上传和修改更加便捷。
     - `git branch` 和 `git branch -a` 的区别是什么？查阅资料并回答。
+    答：git branch 只列出本地分支，即存放在个人电脑仓库的分支。
+        git branch -a则显示全部分支，即本地分支与远程追踪分支
 
 2. 使用此仓库建立个人仓库，完成 `main.c` 文件中的 `TODO` 部分并进行一次 commit。（50 分）
 
@@ -27,6 +31,8 @@ Due: 30 Sep, 23:59:59
     - [Commit Message 规范](https://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
     - [Git Flow 分支控制](https://www.dafaycoding.com/article/git-gif-flow)
     - [语义化版本](https://semver.org/lang/zh-CN/)
+
+    答：学习git能让集体编程过程变得更加清晰规范，我们能清楚知道每一个改动的来源，每一段代码的目的，这有助于帮助前期清晰有效的编程，还有利于后期高效的维护工作，如果出现问题，还能帮助我们快速找到问题来源进行修改。
 
 4. 学习 Git 分支管理，新建 `feature` 分支，在该分支以及 `main` 分支上对 `main.c` 分别进行一次修改与提交（10 分）。随后将 `feature` 分支 merge 到 `main` 分支（即切换回 main 分支执行 `git merge feature`），并处理发生的合并冲突（10 分）。
 
